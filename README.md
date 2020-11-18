@@ -1,4 +1,4 @@
-# Magento2 docker compose
+# InteGento docker compose
 
 Quick & Dirty way to work with Magento 2.
 
