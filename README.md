@@ -13,6 +13,7 @@ Quick & Dirty way to work with Magento 2.
 - Start env : `docker-compose up -d`;
 - Stop : `docker-compose stop`;
 - SSH to a machine : `sudo docker exec -it myproject_php_1 /bin/bash`
+- Go to http://localhost:8080.
 
 ## `.env` file :
 

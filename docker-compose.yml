@@ -43,5 +43,24 @@ services:
             MYSQL_PASSWORD: ${MYSQL_PASSWORD}
         volumes:
           - db-myproject:/var/lib/mysql
+
+    elasticsearch:
+        image: elasticsearch:7.6.2
+        ports:
+            - "9200:9200"
+            - "9300:9300"
+        depends_on:
+            - php
+        environment:
+            discovery.type: single-node
+        volumes:
+          - db-myprojectes:/usr/share/elasticsearch/data
+
+    redis:
+        image: redis
+        expose:
+            - 6379
+
 volumes:
   db-myproject:
+  db-myprojectes:
